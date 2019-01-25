@@ -42,7 +42,7 @@ for (let i = 0; i < N; i++) {
     for (var j = 0; j < W.length; ++j) {
         str += dict[W[j]];
     }
-    if (L.indexOf(str) > -1)
+    if (str.length <= L.length && L.indexOf(str) > -1)
         words.push(str);
 }
 const totalLength = L.length;
